@@ -1,0 +1,870 @@
+/**
+ * =================================================================== 
+ * Custom Styles for Omar Alieh Personal Website
+ * Color Palette: Deep Navy (#0A2540) + Gold (#FFB800) + Off-white (#F8F9FA)
+ * =================================================================== 
+ */
+
+/* =================================================================== 
+   Color Variables
+   ================================================================ === */
+:root {
+   --primary-navy: #0A2540;
+   --primary-gold: #FFB800;
+   --accent-gold: #FFA500;
+   --bg-offwhite: #F8F9FA;
+   --text-charcoal: #2D3748;
+   --text-light: #64748B;
+   --border-color: #E2E8F0;
+   --white: #FFFFFF;
+}
+
+/* =================================================================== 
+   Header & Navigation Enhancements
+   ================================================================ === */
+header {
+   background: var(--white);
+   border-bottom: 1px solid var(--border-color);
+   box-shadow: 0 2px 4px rgba(10, 37, 64, 0.05);
+}
+
+.logo a {
+   color: var(--primary-navy) !important;
+   font-family: 'poppins-bold', sans-serif;
+   letter-spacing: 0.3rem;
+   font-size: 1.5rem;
+}
+
+.main-navigation a {
+   color: var(--text-charcoal);
+   font-family: 'poppins-medium', sans-serif;
+   font-size: 1.3rem;
+   transition: color 0.3s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation .current a {
+   color: var(--primary-gold);
+}
+
+/* =================================================================== 
+   Intro Section
+   ================================================================ === */
+#intro {
+   background: linear-gradient(135deg, var(--primary-navy) 0%, #0D3A5F 100%);
+   min-height: 100vh;
+}
+
+#intro .intro-overlay {
+   background: rgba(10, 37, 64, 0.3);
+}
+
+#intro h1 {
+   color: var(--white);
+   font-size: 8.4rem;
+   line-height: 1.2;
+   margin-bottom: 1.5rem;
+}
+
+#intro h5 {
+   color: var(--primary-gold);
+   font-size: 1.8rem;
+   letter-spacing: 0.3rem;
+   margin-bottom: 1.2rem;
+   text-transform: uppercase;
+   font-family: 'poppins-semibold', sans-serif;
+}
+
+#intro .intro-position span {
+   background: rgba(255, 184, 0, 0.1);
+   border: 1px solid rgba(255, 184, 0, 0.3);
+   color: var(--primary-gold);
+   padding: 1rem 2rem;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+   border-radius: 3px;
+   transition: all 0.3s ease;
+}
+
+#intro .intro-position span:hover {
+   background: var(--primary-gold);
+   color: var(--primary-navy);
+   transform: translateY(-2px);
+}
+
+#intro .button.stroke {
+   border-color: var(--primary-gold);
+   color: var(--primary-gold);
+   background: transparent;
+   margin-top: 3rem;
+}
+
+#intro .button.stroke:hover {
+   background: var(--primary-gold);
+   color: var(--primary-navy);
+}
+
+#intro .intro-social a {
+   color: rgba(255, 255, 255, 0.3);
+   border-color: rgba(255, 255, 255, 0.1);
+   transition: all 0.3s ease;
+}
+
+#intro .intro-social a:hover {
+   color: var(--primary-gold);
+   border-color: var(--primary-gold);
+}
+
+/* =================================================================== 
+   About Section
+   ================================================================ === */
+#about {
+   background: var(--bg-offwhite);
+   padding: 12rem 0;
+}
+
+#about h5 {
+   color: var(--primary-gold);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.6rem;
+   letter-spacing: 0.3rem;
+   margin-bottom: 1.5rem;
+}
+
+#about h1 {
+   color: var(--primary-navy);
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.2rem;
+   line-height: 1.3;
+   margin-bottom: 3rem;
+}
+
+#about h3 {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2.4rem;
+   margin-bottom: 2rem;
+   margin-top: 4rem;
+}
+
+#about .intro-info img {
+   border-radius: 50%;
+   border: 5px solid var(--primary-gold);
+   width: 180px;
+   height: 180px;
+   object-fit: cover;
+   margin-bottom: 3rem;
+   box-shadow: 0 10px 30px rgba(10, 37, 64, 0.15);
+}
+
+#about .lead {
+   color: var(--text-charcoal);
+   font-size: 2rem;
+   line-height: 1.8;
+   font-family: 'lora-regular', serif;
+}
+
+#about p {
+   color: var(--text-charcoal);
+   font-size: 1.7rem;
+   line-height: 1.8;
+   margin-bottom: 2rem;
+}
+
+/* =================================================================== 
+   Stats Grid
+   ================================================================ === */
+.stats-title {
+   text-align: center;
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 3rem;
+   margin-top: 6rem;
+   margin-bottom: 4rem;
+}
+
+.stats-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 3rem;
+   margin-top: 4rem;
+   margin-bottom: 6rem;
+}
+
+.stat-item {
+   background: var(--white);
+   padding: 3rem 2rem;
+   border-radius: 8px;
+   text-align: center;
+   box-shadow: 0 5px 15px rgba(10, 37, 64, 0.08);
+   border-top: 4px solid var(--primary-gold);
+   transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 30px rgba(10, 37, 64, 0.15);
+}
+
+.stat-number {
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.5rem;
+   color: var(--primary-navy);
+   line-height: 1.2;
+   margin-bottom: 1rem;
+}
+
+.stat-label {
+   font-family: 'poppins-medium', sans-serif;
+   font-size: 1.4rem;
+   color: var(--text-light);
+   line-height: 1.4;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+}
+
+/* =================================================================== 
+   Button Styles
+   ================================================================ === */
+.button {
+   border-radius: 4px;
+   transition: all 0.3s ease;
+   font-family: 'poppins-semibold', sans-serif;
+   letter-spacing: 0.1rem;
+}
+
+.button-primary {
+   background: var(--primary-gold);
+   color: var(--primary-navy);
+   border: none;
+}
+
+.button-primary:hover {
+   background: var(--accent-gold);
+   transform: translateY(-2px);
+   box-shadow: 0 5px 15px rgba(255, 184, 0, 0.3);
+}
+
+.button.stroke {
+   border-color: var(--primary-navy);
+   color: var(--primary-navy);
+}
+
+.button.stroke:hover {
+   background: var(--primary-navy);
+   color: var(--white);
+}
+
+/* =================================================================== 
+   Experience Section (Grey Section)
+   ================================================================ === */
+.grey-section {
+   background: var(--white);
+}
+
+#experience {
+   padding: 12rem 0;
+}
+
+#experience .section-intro h5 {
+   color: var(--primary-gold);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.6rem;
+   letter-spacing: 0.3rem;
+}
+
+#experience .section-intro h1 {
+   color: var(--primary-navy);
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.2rem;
+}
+
+#experience .section-intro .lead {
+   color: var(--text-charcoal);
+   font-size: 2rem;
+   line-height: 1.8;
+}
+
+.resume-header h2 {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2.8rem;
+   margin-bottom: 4rem;
+   position: relative;
+   padding-left: 3rem;
+}
+
+.resume-header h2::before {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 4px;
+   height: 40px;
+   background: var(--primary-gold);
+}
+
+.timeline-block {
+   position: relative;
+   padding-left: 8rem;
+   margin-bottom: 6rem;
+}
+
+.timeline-ico {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 5rem;
+   height: 5rem;
+   background: var(--primary-gold);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--primary-navy);
+   font-size: 2rem;
+   box-shadow: 0 5px 15px rgba(255, 184, 0, 0.3);
+}
+
+.timeline-header h3 {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2.2rem;
+   margin-bottom: 0.5rem;
+}
+
+.timeline-header p {
+   color: var(--primary-gold);
+   font-family: 'poppins-medium', sans-serif;
+   font-size: 1.4rem;
+   margin-bottom: 1.5rem;
+}
+
+.timeline-content h4 {
+   color: var(--text-charcoal);
+   font-family: 'poppins-medium', sans-serif;
+   font-size: 1.8rem;
+   margin-bottom: 2rem;
+}
+
+.timeline-highlight {
+   background: rgba(255, 184, 0, 0.1);
+   padding: 1.5rem;
+   border-left: 3px solid var(--primary-gold);
+   margin-bottom: 2rem;
+   font-size: 1.6rem;
+   font-style: italic;
+   color: var(--text-charcoal);
+}
+
+.timeline-content ul.disc {
+   margin-left: 2rem;
+   margin-top: 1.5rem;
+}
+
+.timeline-content ul.disc li {
+   color: var(--text-charcoal);
+   font-size: 1.6rem;
+   line-height: 1.8;
+   margin-bottom: 1.2rem;
+   list-style: disc;
+}
+
+.timeline-content ul.disc li strong {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+}
+
+/* =================================================================== 
+   Skills Section
+   ================================================================ === */
+#skills {
+   background: linear-gradient(135deg, var(--primary-navy) 0%, #0D3A5F 100%);
+   padding: 12rem 0;
+   position: relative;
+}
+
+#skills .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(10, 37, 64, 0.5);
+}
+
+#skills .section-intro {
+   position: relative;
+   z-index: 2;
+}
+
+#skills .section-intro h5 {
+   color: var(--primary-gold);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.6rem;
+   letter-spacing: 0.3rem;
+}
+
+#skills .section-intro h1 {
+   color: var(--white);
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.2rem;
+}
+
+#skills .section-intro .lead {
+   color: rgba(255, 255, 255, 0.9);
+   font-size: 2rem;
+}
+
+.skills-content {
+   position: relative;
+   z-index: 2;
+}
+
+.skills-category-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 3rem;
+   margin-top: 6rem;
+}
+
+.skill-category {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 184, 0, 0.2);
+   border-radius: 8px;
+   padding: 3rem 2.5rem;
+   transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+   background: rgba(255, 255, 255, 0.08);
+   border-color: var(--primary-gold);
+   transform: translateY(-5px);
+}
+
+.category-icon {
+   width: 60px;
+   height: 60px;
+   background: var(--primary-gold);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 2rem;
+   color: var(--primary-navy);
+   font-size: 2.4rem;
+}
+
+.skill-category h3 {
+   color: var(--white);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 2rem;
+}
+
+.skill-list {
+   list-style: none;
+}
+
+.skill-list li {
+   color: rgba(255, 255, 255, 0.85);
+   font-size: 1.5rem;
+   line-height: 1.6;
+   margin-bottom: 1rem;
+   padding-left: 2rem;
+   position: relative;
+}
+
+.skill-list li::before {
+   content: '▸';
+   position: absolute;
+   left: 0;
+   color: var(--primary-gold);
+   font-size: 1.2rem;
+}
+
+/* Additional Info Boxes */
+.additional-info {
+   margin-top: 8rem;
+}
+
+.info-box {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 184, 0, 0.2);
+   border-radius: 8px;
+   padding: 3rem 2.5rem;
+   height: 100%;
+}
+
+.info-box h3 {
+   color: var(--white);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2rem;
+   margin-bottom: 2rem;
+}
+
+.info-box h3 i {
+   color: var(--primary-gold);
+   margin-right: 1rem;
+}
+
+.tag-cloud {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+
+.tag {
+   background: rgba(255, 184, 0, 0.2);
+   border: 1px solid rgba(255, 184, 0, 0.4);
+   color: var(--primary-gold);
+   padding: 0.8rem 1.5rem;
+   border-radius: 20px;
+   font-size: 1.4rem;
+   font-family: 'poppins-medium', sans-serif;
+}
+
+.language-bars {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.language-item span {
+   color: var(--white);
+   font-size: 1.5rem;
+   font-family: 'poppins-medium', sans-serif;
+   display: block;
+   margin-bottom: 0.8rem;
+}
+
+.progress-bar {
+   width: 100%;
+   height: 8px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 4px;
+   overflow: hidden;
+}
+
+.progress {
+   height: 100%;
+   background: linear-gradient(90deg, var(--primary-gold), var(--accent-gold));
+   border-radius: 4px;
+   transition: width 1s ease;
+}
+
+/* Certifications Box */
+.certifications-box {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 184, 0, 0.2);
+   border-radius: 8px;
+   padding: 3rem 4rem;
+   margin-top: 6rem;
+}
+
+.certifications-box h3 {
+   color: var(--white);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2.4rem;
+   margin-bottom: 2.5rem;
+}
+
+.certifications-box h3 i {
+   color: var(--primary-gold);
+   margin-right: 1.5rem;
+}
+
+.cert-list {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 1.5rem;
+}
+
+.cert-list li {
+   color: rgba(255, 255, 255, 0.9);
+   font-size: 1.6rem;
+   line-height: 1.6;
+   padding-left: 3rem;
+   position: relative;
+}
+
+.cert-list li i {
+   position: absolute;
+   left: 0;
+   color: var(--primary-gold);
+   font-size: 1.8rem;
+}
+
+/* =================================================================== 
+   Projects Section
+   ================================================================ === */
+#projects {
+   background: var(--bg-offwhite);
+   padding: 12rem 0;
+}
+
+#projects .section-intro h5 {
+   color: var(--primary-gold);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.6rem;
+   letter-spacing: 0.3rem;
+}
+
+#projects .section-intro h1 {
+   color: var(--primary-navy);
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.2rem;
+}
+
+#projects .section-intro .lead {
+   color: var(--text-charcoal);
+   font-size: 2rem;
+}
+
+.portfolio-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   gap: 3rem;
+   margin-top: 6rem;
+}
+
+.portfolio-item {
+   background: var(--white);
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(10, 37, 64, 0.08);
+   transition: all 0.3s ease;
+   border-top: 4px solid var(--primary-gold);
+}
+
+.portfolio-item:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 15px 40px rgba(10, 37, 64, 0.15);
+}
+
+.portfolio-item-content {
+   padding: 3rem;
+}
+
+.portfolio-icon {
+   width: 70px;
+   height: 70px;
+   background: linear-gradient(135deg, var(--primary-gold), var(--accent-gold));
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--primary-navy);
+   font-size: 3rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 5px 15px rgba(255, 184, 0, 0.3);
+}
+
+.portfolio-item h3 {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 2.2rem;
+   margin-bottom: 1.5rem;
+   line-height: 1.4;
+}
+
+.project-desc {
+   color: var(--text-charcoal);
+   font-size: 1.6rem;
+   line-height: 1.8;
+   margin-bottom: 2rem;
+}
+
+.project-impact {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   margin-bottom: 2rem;
+}
+
+.impact-tag {
+   background: rgba(255, 184, 0, 0.1);
+   border: 1px solid rgba(255, 184, 0, 0.3);
+   color: var(--text-charcoal);
+   padding: 0.6rem 1.2rem;
+   border-radius: 20px;
+   font-size: 1.3rem;
+   font-family: 'poppins-medium', sans-serif;
+}
+
+.project-result {
+   color: var(--text-charcoal);
+   font-size: 1.5rem;
+   line-height: 1.6;
+   padding-left: 2rem;
+   border-left: 3px solid var(--primary-gold);
+}
+
+.project-result strong {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+}
+
+/* =================================================================== 
+   Contact Section
+   ================================================================ === */
+#contact {
+   background: var(--white);
+   padding: 12rem 0;
+}
+
+#contact .section-intro h5 {
+   color: var(--primary-gold);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.6rem;
+   letter-spacing: 0.3rem;
+}
+
+#contact .section-intro h1 {
+   color: var(--primary-navy);
+   font-family: 'poppins-bold', sans-serif;
+   font-size: 4.2rem;
+}
+
+#contact .section-intro .lead {
+   color: var(--text-charcoal);
+   font-size: 2rem;
+}
+
+.contact-info .icon {
+   color: var(--primary-gold);
+   font-size: 3.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.contact-info h5 {
+   color: var(--primary-navy);
+   font-family: 'poppins-semibold', sans-serif;
+   font-size: 1.8rem;
+   margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+   color: var(--text-charcoal);
+   font-size: 1.6rem;
+   line-height: 1.8;
+}
+
+/* =================================================================== 
+   Footer
+   ================================================================ === */
+footer {
+   background: var(--primary-navy);
+   padding: 6rem 0 4rem;
+}
+
+.footer-social li a {
+   color: rgba(255, 255, 255, 0.5);
+   border-color: rgba(255, 255, 255, 0.1);
+   transition: all 0.3s ease;
+}
+
+.footer-social li a:hover {
+   color: var(--primary-gold);
+   border-color: var(--primary-gold);
+}
+
+.copyright span {
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 1.4rem;
+}
+
+#go-top {
+   background: var(--primary-gold);
+}
+
+#go-top:hover {
+   background: var(--accent-gold);
+}
+
+#go-top a {
+   color: var(--primary-navy);
+}
+
+/* =================================================================== 
+   Responsive Adjustments
+   ================================================================ === */
+@media screen and (max-width: 1024px) {
+   #intro h1 {
+      font-size: 6.5rem;
+   }
+   
+   .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+   }
+   
+   .stat-number {
+      font-size: 3.5rem;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   #intro h1 {
+      font-size: 4.8rem;
+   }
+   
+   #about h1,
+   #experience .section-intro h1,
+   #skills .section-intro h1,
+   #projects .section-intro h1,
+   #contact .section-intro h1 {
+      font-size: 3.2rem;
+   }
+   
+   .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .skills-category-grid {
+      grid-template-columns: 1fr;
+   }
+   
+   .portfolio-grid {
+      grid-template-columns: 1fr;
+   }
+   
+   .timeline-block {
+      padding-left: 6rem;
+   }
+   
+   .timeline-ico {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.8rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   #intro h1 {
+      font-size: 3.6rem;
+   }
+   
+   #intro .intro-position span {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 1rem;
+   }
+   
+   .stats-grid {
+      grid-template-columns: 1fr;
+   }
+   
+   .stat-number {
+      font-size: 3rem;
+   }
+   
+   .cert-list {
+      grid-template-columns: 1fr;
+   }
+}
