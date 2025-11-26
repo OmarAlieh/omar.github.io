@@ -1,0 +1,167 @@
+/**
+ * EMERGENCY FIXES - Add this LAST in index.html
+ * Overrides all problematic styles
+ */
+
+/* ===== FIX 1: REMOVE ALL RED COLORS ===== */
+* {
+    color: inherit !important;
+}
+
+/* Loading bar */
+#loader, .pace, .pace-progress {
+    background: #FFB800 !important;
+    border-color: #FFB800 !important;
+}
+
+/* Any red elements */
+[style*="red"], 
+[style*="#ff0000"],
+[style*="rgb(255, 0, 0)"] {
+    color: #0A2540 !important;
+    background-color: transparent !important;
+    border-color: #FFB800 !important;
+}
+
+/* ===== FIX 2: UNIFIED FONT (POPPINS ONLY) ===== */
+body, html, * {
+    font-family: 'Poppins', 'Arial', sans-serif !important;
+}
+
+/* ===== FIX 3: ADD BOLD/EMPHASIS ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600 !important;
+    color: #0A2540 !important;
+}
+
+strong, b {
+    font-weight: 700 !important;
+}
+
+/* Section titles */
+.section-intro h1,
+.section-intro h5 {
+    font-weight: 600 !important;
+}
+
+/* ===== FIX 4: AI SECTION ALIGNMENT ===== */
+.ai-playground {
+    text-align: center !important;
+    padding: 12rem 0 !important;
+}
+
+.ai-mode-toggle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    margin: 4rem auto !important;
+}
+
+.ai-mode-button {
+    min-width: 200px !important;
+    padding: 16px 32px !important;
+    font-size: 1.6rem !important;
+    text-align: center !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* ===== FIX 5: BUTTON FIXES ===== */
+.button, .btn, button {
+    font-weight: 600 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+.button-primary {
+    background: linear-gradient(135deg, #FFB800, #FFA500) !important;
+    color: #0A2540 !important;
+    border: none !important;
+}
+
+/* ===== FIX 6: CARD ALIGNMENTS ===== */
+.portfolio-item,
+.impact-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+/* ===== FIX 7: METRICS GRID ===== */
+.stats-grid,
+.impact-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 2rem !important;
+    margin: 4rem 0 !important;
+}
+
+/* ===== FIX 8: HIDE BROKEN ELEMENTS ===== */
+.broken-element,
+.error-display,
+[style*="display: none"] {
+    display: none !important;
+}
+
+/* Empty sections */
+section:empty,
+div:empty {
+    display: none !important;
+}
+
+/* ===== FIX 9: AI CHAT BUTTON ===== */
+.ai-chat-button {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 70px !important;
+    height: 70px !important;
+    z-index: 10000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(135deg, #FFB800, #FFA500) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 8px 32px rgba(255, 184, 0, 0.4) !important;
+    cursor: pointer !important;
+}
+
+/* ===== FIX 10: CONSISTENT COLORS ===== */
+/* Navy backgrounds */
+.hero,
+.ai-playground,
+footer {
+    background: linear-gradient(135deg, #0A2540, #0D3A5F) !important;
+}
+
+/* Gold accents */
+.stat-number,
+.impact-tag,
+.badge {
+    color: #FFB800 !important;
+}
+
+/* White backgrounds */
+.about,
+.skills,
+.projects,
+.contact {
+    background: #F8F9FA !important;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+@media screen and (max-width: 768px) {
+    .ai-mode-button {
+        min-width: 150px !important;
+        font-size: 1.4rem !important;
+        padding: 12px 24px !important;
+    }
+    
+    h1 {
+        font-size: 3.6rem !important;
+    }
+}
